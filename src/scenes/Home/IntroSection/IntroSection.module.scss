@@ -1,0 +1,235 @@
+// IntroSection.module.scss
+
+.content {
+  position: relative;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introduction {
+  color: var(--txt);
+  padding: 5rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.introductionText {
+  display: flex;
+  flex-direction: row;
+  word-spacing: 0.2rem;
+}
+
+.title {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.introductionText .description {
+  padding-top: 2.5rem;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 1.8rem;
+}
+
+.introductionText .description p {
+  margin: 2rem;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-left: 5rem;
+}
+
+.image > div {
+  max-width: 100%;
+  height: auto;
+}
+
+.purple {
+  color: var(--txt-secondary);
+}
+
+.introSocial {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.introSocial h1 {
+  font-size: 2.5rem;
+}
+
+.introSocial p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.socialLinks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.socialLink {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.socialIcon {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--social-icon);
+  background: hsla(0, 0%, 100%, 0.972);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--social-shadow);
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Styles for screens up to 1199px */
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introductionText {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .image {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .image > div {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  .content {
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .introduction {
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introductionText {
+    display: flex;
+    flex-direction: column;
+    word-spacing: 0.2rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .introductionText .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .image {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .image > div {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .introSocial h1 {
+    font-size: 2rem;
+  }
+
+  .introSocial p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .socialIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .introductionText .description {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  /* Styles for smaller mobile devices */
+  .content {
+    padding: 1rem 0.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .introductionText .description {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    padding: 0 1rem;
+      width: 70%;
+  }
+
+  .image {
+    padding: 0.5rem 1rem;
+  }
+
+  .image > div {
+    max-width: 100%;
+  }
+  .introSocial h1 {
+    font-size: 1.3rem;
+  }
+
+  .introSocial p {
+    font-size: 0.8rem;
+  }
+
+  .socialIcon {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
