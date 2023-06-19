@@ -1,5 +1,4 @@
 import s from './AboutTextCard.module.scss';
-import { ImPointRight } from 'react-icons/im';
 
 const AboutTextCard = () => {
   return (

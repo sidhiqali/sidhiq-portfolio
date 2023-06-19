@@ -6,7 +6,6 @@ import {
   DiMongodb,
   DiGit,
   DiSass,
-  DiDocker,
 } from 'react-icons/di';
 import {
   SiTypescript,
